@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Story and Review</title>
 </head>
 <body>
@@ -21,31 +21,34 @@
     </header>
     </div>
 
-    <div id = "downtown">
+    <h1>Our Story</h1>
+
+    <div class = "story_paragraph">
+    <p>Miguelito's started as an idea. The idea that it doesn't matter where you're from or what is going on in your life, good mexican food can bring a smile to your face. The founder and owner of Miguelito's understood this idea, so he took it upon himself to create a restaurant that is capable of bring that joy and pleasure to anyone who walks into this slice of Mexico. With fresh cooked ingredients brought straight to your table, you'll feel like you are already in Mexico!</p>
+    </div>
+
+
+      <div id = "downtown">
         <img id="downtown_img" src="images/coronado2.jpg" alt="Downtown San Diego">
       </div>
+<br>
+      <h2>Leave a Review!</h2>
+      <div class="container">
+        <form action="action_page.php">
+      
+          <label for="name">First and Last Name</label>
+          <input type="text" id="name" name="yourname" placeholder="Your name..">
+      
+          <label for="lname">Email</label>
+          <input type="text" id="email" name="youremail" placeholder="Your Email..">
 
-      <h1>Our Story</h1>
-      <p>Miguelito's started as an Idea. The idea that it doesn't matter where you're from or what is going on in your life, good mexican food can bring a smile to your face. The founder and owner of Miguelito's understood this idea, so he took it upon himself to create a restaurant that is capable of bring that joy and pleasure to anyone who walks into this slice of Mexico. With fresh cooked ingredients brought straight to your table, you'll feel like you are already in Mexico!</p>
-
-      <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <p>Please Leave A Review</p>
-            <ul>
-                <li>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name" value="Please put your name"/>
-                </li>
-                <li>
-                  <label for="mail">Email:</label>
-                  <input type="email" id="mail" name="user_email" />
-                </li>
-                <li>
-                  <label for="msg">Comments:</label>
-                  <textarea id="msg" name="user_message"></textarea>
-                </li>
-                  </ul>
-            </form>        
+          </select>
+      
+          <label for="subject">Leave A Review</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+        </form>
+      </div>       
         <fieldset>
             <legend>How Was Your Meal</legend>
             <p>
@@ -61,6 +64,10 @@
               <label for="size_3">Good</label>
             </p>
           </fieldset>
+          <div class ="button">
+          <input type="submit" value="Submit">
+          </div>
+          <br>
     <footer>
         <p>Miguelito’s &copy; 2023 - Mickey Rahm</p>
             <a href="index.html">Home</a>
